@@ -23,6 +23,7 @@
 		2F7C2875238068EF0015C3E4 /* FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7C2874238068EF0015C3E4 /* FeedStore.swift */; };
 		2F7C287723806B240015C3E4 /* AuthenticatedUserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7C287623806B240015C3E4 /* AuthenticatedUserStore.swift */; };
 		2F7C2879238070810015C3E4 /* LikedPostsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7C2878238070810015C3E4 /* LikedPostsStore.swift */; };
+		6F4C926C23E34C8000E8E75D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C926B23E34C8000E8E75D /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		2F7C2874238068EF0015C3E4 /* FeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStore.swift; sourceTree = "<group>"; };
 		2F7C287623806B240015C3E4 /* AuthenticatedUserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedUserStore.swift; sourceTree = "<group>"; };
 		2F7C2878238070810015C3E4 /* LikedPostsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPostsStore.swift; sourceTree = "<group>"; };
+		6F4C926B23E34C8000E8E75D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				2F7C283F23803CE60015C3E4 /* ContentView.swift */,
+				6F4C926B23E34C8000E8E75D /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F7C285323803D970015C3E4 /* Photo.swift in Sources */,
+				6F4C926C23E34C8000E8E75D /* MainView.swift in Sources */,
 				2F7C283C23803CE60015C3E4 /* AppDelegate.swift in Sources */,
 				2F7C283E23803CE60015C3E4 /* SceneDelegate.swift in Sources */,
 				2F7C2875238068EF0015C3E4 /* FeedStore.swift in Sources */,
@@ -358,14 +362,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Lamstagram/Preview Content\"";
-				DEVELOPMENT_TEAM = VKFK92G6KE;
+				DEVELOPMENT_TEAM = KW278547Y4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Lamstagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.jankaltoun.Lamstagram;
+				PRODUCT_BUNDLE_IDENTIFIER = org.jankaltoun.Lamstagram.xdolon00;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -378,14 +382,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Lamstagram/Preview Content\"";
-				DEVELOPMENT_TEAM = VKFK92G6KE;
+				DEVELOPMENT_TEAM = KW278547Y4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Lamstagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.jankaltoun.Lamstagram;
+				PRODUCT_BUNDLE_IDENTIFIER = org.jankaltoun.Lamstagram.xdolon00;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
