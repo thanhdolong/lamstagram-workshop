@@ -17,7 +17,7 @@ struct ProfileHeaderView: View {
     
     var body: some View {
         VStack {
-            HStack(spacing: 16) {
+            HStack {
                 Image(user.imageName)
                     .resizable()
                     .clipShape(Circle())
@@ -25,20 +25,24 @@ struct ProfileHeaderView: View {
 
                 Spacer()
 
-                VStack {
-                    Text(String(user.numberOfPosts))
-                    Text("Post")
+                HStack(spacing: 16) {
+                    VStack {
+                        Text(String(user.numberOfPosts))
+                        Text("Post")
+                    }
+
+                    VStack {
+                        Text(String(user.numberOfFollowers))
+                        Text("Followers")
+                    }
+
+                    VStack {
+                        Text(String(user.numberFollowing))
+                        Text("Following")
+                    }
                 }
 
-                VStack {
-                    Text(String(user.numberOfFollowers))
-                    Text("Followers")
-                }
-
-                VStack {
-                    Text(String(user.numberFollowing))
-                    Text("Following")
-                }
+                Spacer()
             }
 
             Text(user.description)

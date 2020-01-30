@@ -16,7 +16,7 @@ struct ProfileFriendsView: View {
     }
 
     var body: some View {
-        ScrollView {
+        ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(friends) { friend in
                     VStack {
