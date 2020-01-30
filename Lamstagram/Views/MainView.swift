@@ -12,7 +12,7 @@ struct MainView: View {
     var body: some View {
         TabView {
             NavigationView {
-                Text("Feed Tab")
+                FeedView(feedStore: FeedStore(user: nil))
             }.tabItem {
                 Image(systemName: "house")
                 Text("Feed")

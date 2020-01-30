@@ -17,8 +17,8 @@ struct FeedView: View {
 
     var body: some View {
         ScrollView(.vertical) {
-            ForEach(feedStore.posts) { item in
-                PostView()
+            ForEach(feedStore.posts) { post in
+                PostView(post: post)
             }
         }
         .navigationBarTitle(Text("Feed"))

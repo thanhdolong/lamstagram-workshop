@@ -9,13 +9,25 @@
 import SwiftUI
 
 struct PostView: View {
+    let post: Post
+
+    init(post: Post) {
+        self.post = post
+    }
+
     var body: some View {
-        Text("Post")
+        HStack {
+            Image(post.imageName)
+            VStack {
+                Text(post.text)
+                Text(post.user.name)
+            }
+        }
     }
 }
 
 struct PostView_Previews: PreviewProvider {
     static var previews: some View {
-        PostView()
+        PostView(post: MockData.posts.first!)
     }
 }
