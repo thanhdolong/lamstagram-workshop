@@ -16,12 +16,32 @@ struct PostView: View {
     }
 
     var body: some View {
-        HStack {
+        VStack(alignment: .leading) {
+            HStack {
+                Image(post.user.imageName)
+                    .resizable()
+                    .clipShape(Circle())
+                    .frame(width: 40, height: 40)
+
+                VStack(alignment: .leading) {
+                    Text(post.user.nickname)
+                    Text(post.user.name)
+                }
+            }.padding()
+
             Image(post.imageName)
-            VStack {
-                Text(post.text)
-                Text(post.user.name)
-            }
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+
+            HStack {
+                Image(systemName: "heart")
+                Image(systemName: "message")
+                Image(systemName: "paperplane")
+
+                Spacer()
+
+                Image(systemName: "bookmark")
+            }.padding()
         }
     }
 }
