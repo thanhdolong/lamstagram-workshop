@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct MainView: View {
+    @EnvironmentObject private var authenticatedUserStore: AuthenticatedUserStore
+
     var body: some View {
         TabView {
             NavigationView {
@@ -19,7 +21,7 @@ struct MainView: View {
             }
 
             NavigationView {
-                Text("Profile Tab")
+                ProfileView(user: authenticatedUserStore.user!)
             }.tabItem {
                 Image(systemName: "person")
                 Text("Profile")
@@ -31,5 +33,8 @@ struct MainView: View {
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
+            .environmentObject(
+                AuthenticatedUserStore(user: MockData.users.first!)
+        )
     }
 }

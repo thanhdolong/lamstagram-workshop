@@ -26,6 +26,10 @@
 		6F4C926C23E34C8000E8E75D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C926B23E34C8000E8E75D /* MainView.swift */; };
 		6F4C926E23E34F5900E8E75D /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C926D23E34F5900E8E75D /* PostView.swift */; };
 		6F4C927023E3518E00E8E75D /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C926F23E3518E00E8E75D /* FeedView.swift */; };
+		6F4C927823E35D9F00E8E75D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C927723E35D9F00E8E75D /* ProfileView.swift */; };
+		6F4C927A23E35FC600E8E75D /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C927923E35FC600E8E75D /* ProfileHeaderView.swift */; };
+		6F4C927C23E35FD700E8E75D /* ProfileFriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C927B23E35FD700E8E75D /* ProfileFriendsView.swift */; };
+		6F4C927E23E35FE300E8E75D /* ProfilePostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C927D23E35FE300E8E75D /* ProfilePostsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,10 @@
 		6F4C926B23E34C8000E8E75D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		6F4C926D23E34F5900E8E75D /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		6F4C926F23E3518E00E8E75D /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		6F4C927723E35D9F00E8E75D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		6F4C927923E35FC600E8E75D /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		6F4C927B23E35FD700E8E75D /* ProfileFriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFriendsView.swift; sourceTree = "<group>"; };
+		6F4C927D23E35FE300E8E75D /* ProfilePostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,10 +127,10 @@
 		2F7C285623803DA40015C3E4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6F4C927623E35D7900E8E75D /* Profile */,
+				6F4C927523E35D5300E8E75D /* Feed */,
 				2F7C283F23803CE60015C3E4 /* ContentView.swift */,
 				6F4C926B23E34C8000E8E75D /* MainView.swift */,
-				6F4C926D23E34F5900E8E75D /* PostView.swift */,
-				6F4C926F23E3518E00E8E75D /* FeedView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -144,6 +152,26 @@
 				2F7C2878238070810015C3E4 /* LikedPostsStore.swift */,
 			);
 			path = Stores;
+			sourceTree = "<group>";
+		};
+		6F4C927523E35D5300E8E75D /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				6F4C926D23E34F5900E8E75D /* PostView.swift */,
+				6F4C926F23E3518E00E8E75D /* FeedView.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		6F4C927623E35D7900E8E75D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				6F4C927723E35D9F00E8E75D /* ProfileView.swift */,
+				6F4C927923E35FC600E8E75D /* ProfileHeaderView.swift */,
+				6F4C927B23E35FD700E8E75D /* ProfileFriendsView.swift */,
+				6F4C927D23E35FE300E8E75D /* ProfilePostsView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,12 +251,16 @@
 				2F7C283E23803CE60015C3E4 /* SceneDelegate.swift in Sources */,
 				2F7C2875238068EF0015C3E4 /* FeedStore.swift in Sources */,
 				2F7C2867238043AF0015C3E4 /* User.swift in Sources */,
+				6F4C927C23E35FD700E8E75D /* ProfileFriendsView.swift in Sources */,
 				2F7C28652380431B0015C3E4 /* Post.swift in Sources */,
 				2F7C286E238051CF0015C3E4 /* Array+chunked.swift in Sources */,
 				6F4C927023E3518E00E8E75D /* FeedView.swift in Sources */,
+				6F4C927E23E35FE300E8E75D /* ProfilePostsView.swift in Sources */,
+				6F4C927823E35D9F00E8E75D /* ProfileView.swift in Sources */,
 				2F7C285523803D970015C3E4 /* Llama.swift in Sources */,
 				2F7C2879238070810015C3E4 /* LikedPostsStore.swift in Sources */,
 				2F7C284023803CE60015C3E4 /* ContentView.swift in Sources */,
+				6F4C927A23E35FC600E8E75D /* ProfileHeaderView.swift in Sources */,
 				2F7C287723806B240015C3E4 /* AuthenticatedUserStore.swift in Sources */,
 				2F7C285423803D970015C3E4 /* MockData.swift in Sources */,
 				6F4C926E23E34F5900E8E75D /* PostView.swift in Sources */,
