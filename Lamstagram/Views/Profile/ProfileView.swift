@@ -17,8 +17,8 @@ struct ProfileView: View {
     
     var body: some View {
         ScrollView(.vertical) {
-            ProfileHeaderView()
-            ProfileFriendsView()
+            ProfileHeaderView(user: user)
+            ProfileFriendsView(friends: user.friends)
             ProfilePostsView()
         }
     }
